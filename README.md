@@ -105,6 +105,10 @@ Which Kubernetes resource keeps the requested number of application replicas run
 - Secret
 
 
+    Answer: Deployment
+
+
+
 ## Question 6: CI/CD
 
 Ask your coding agent to create `.github/workflows/ci.yml` that runs the starter's tests and your integration test against PostgreSQL, builds a new Docker image, and deploys it to your kind cluster only if the tests pass.

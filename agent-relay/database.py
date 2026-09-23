@@ -165,7 +165,14 @@ SessionLocal = sessionmaker(bind=engine, class_=Session, expire_on_commit=False,
 
 
 def init_db() -> None:
-    Base.metadata.create_all(engine)
+    if _is_sqlite(DATABASE_URL):
+        Base.metadata.create_all(engine)
+        return
+    # Several replicas start at once; an advisory lock keeps their CREATE TABLEs
+    # from racing each other on an empty database.
+    with engine.begin() as connection:
+        connection.exec_driver_sql("SELECT pg_advisory_xact_lock(424242)")
+        Base.metadata.create_all(connection)
 
 
 @contextmanager
