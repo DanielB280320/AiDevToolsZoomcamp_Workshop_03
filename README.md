@@ -123,3 +123,6 @@ What should happen if a test fails in this workflow?
 - Keep the existing version running and stop the deployment.
 - Delete the existing deployment.
 - Deploy the previous image with the new tag.
+
+
+    Answer: Keep the existing version running and stop the deployment.
