@@ -24,10 +24,9 @@ Which description matches the project's architecture?
 - Agents consume tasks from a message broker.
 - The browser stores and executes tasks.
 
-
-    Answer: Agents claim tasks from a DB through an HTTP API.
+    Answer: 
+    Agents claim tasks from a DB through an HTTP API.
     
-
 ## Question 2: Register agents and test the task flow
 
 Ask your coding agent to read `SPEC.md` (in the starter repo root) and try its first acceptance scenario with your local Agent Relay:
@@ -42,7 +41,6 @@ Which task status does the sender see after the recipient submits its result?
 - `processing`
 - `completed`
 - `delivered`
-
 
     Answer: `completed`
 
@@ -61,7 +59,6 @@ Which Docker option publishes a container's port to your machine?
 - `-p`
 - `-v`
 - `--name`
-
 
     Answer: `-p`
 
@@ -85,7 +82,6 @@ Which hostname should the API use to connect to the `postgres` service in Docker
 - `host.docker.internal`
 - `0.0.0.0`
 
-
     Answer: `postgres`
 
 
@@ -104,9 +100,7 @@ Which Kubernetes resource keeps the requested number of application replicas run
 - Deployment
 - Secret
 
-
     Answer: Deployment
-
 
 
 ## Question 6: CI/CD
@@ -124,5 +118,5 @@ What should happen if a test fails in this workflow?
 - Delete the existing deployment.
 - Deploy the previous image with the new tag.
 
-
-    Answer: Keep the existing version running and stop the deployment.
+    Answer: 
+    Keep the existing version running and stop the deployment.
