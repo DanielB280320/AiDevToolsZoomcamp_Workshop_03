@@ -25,7 +25,7 @@ Which description matches the project's architecture?
 - The browser stores and executes tasks.
 
 
-    Answer: 
+    Answer: Agents claim tasks from a DB through an HTTP API.
     
 
 ## Question 2: Register agents and test the task flow
@@ -43,6 +43,10 @@ Which task status does the sender see after the recipient submits its result?
 - `completed`
 - `delivered`
 
+
+    Answer: `completed`
+
+
 ## Question 3: Containerization
 
 Ask your coding agent to create a Dockerfile for Agent Relay. Build the image as `agent-relay:local` and run it with the API port published to your machine.
@@ -57,6 +61,10 @@ Which Docker option publishes a container's port to your machine?
 - `-p`
 - `-v`
 - `--name`
+
+
+    Answer: `-p`
+
 
 ## Question 4: Docker Compose and PostgreSQL
 
@@ -76,6 +84,10 @@ Which hostname should the API use to connect to the `postgres` service in Docker
 - `postgres`
 - `host.docker.internal`
 - `0.0.0.0`
+
+
+    Answer: `postgres`
+
 
 ## Question 5: Deploy to Kubernetes
 
